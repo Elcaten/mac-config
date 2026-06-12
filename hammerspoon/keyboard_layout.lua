@@ -1,8 +1,8 @@
 
 local keyboardLayoutModule = {}
 keyboardLayoutModule.showPopUp = true
-keyboardLayoutModule.leftCmdLayout = "English - Universal"
-keyboardLayoutModule.rightCmdLayout = "Russian - Universal"
+keyboardLayoutModule.leftCmdLayout = "ABC"
+keyboardLayoutModule.rightCmdLayout = "Russian"
 
 keyboardLayoutModule.eventwatcher1 = hs.eventtap.new({ hs.eventtap.event.types.flagsChanged }, function(e)
     local flags = e:getFlags()
@@ -34,13 +34,13 @@ keyboardLayoutModule.eventwatcher1 = hs.eventtap.new({ hs.eventtap.event.types.f
                 hs.keycodes.setLayout(keyboardLayoutModule.leftCmdLayout)
 
                 if keyboardLayoutModule.showPopUp then
-                    hs.alert.show("English", 0.2)
+                    --hs.alert.show("English", 0.2)
                 end
             elseif keyCode == 0x36 then
                 hs.keycodes.setLayout(keyboardLayoutModule.rightCmdLayout)
 
                 if keyboardLayoutModule.showPopUp then
-                    hs.alert.show("Russian", 0.2)
+                    --hs.alert.show("Russian", 0.2)
                 end
             end
         end
