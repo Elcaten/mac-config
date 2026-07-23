@@ -1,0 +1,137 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "ssh_connections": [
+    {
+      "host": "hetzner",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/root"],
+        },
+      ],
+    },
+  ],
+  "code_lens": "off",
+  "toolbar": {
+    "code_actions": true,
+  },
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
+  "diff_view_style": "split",
+  "git": {},
+  "format_on_save": "on",
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true,
+      },
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true,
+        "source.fixAll.eslint": true,
+      },
+    },
+  },
+  "outline_panel": {
+    "dock": "right",
+  },
+  "agent": {
+    "dock": "left",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "show_count_badge": false,
+    "entry_primary_click_action": "file_diff",
+    "diff_stats": false,
+    "file_icons": true,
+    "collapse_untracked_diff": false,
+    "sort_by": "path",
+    "status_style": "label_color",
+    "group_by": "staging",
+    "tree_view": true,
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "dock": "right",
+    "button": false,
+  },
+  "project_panel": {
+    "diagnostic_badges": false,
+    "git_status_indicator": true,
+    "git_status": true,
+    "dock": "right",
+    "hide_root": true,
+    "entry_spacing": "standard",
+    "default_width": 300.0,
+  },
+  "terminal": {
+    "font_size": 12.0,
+    "font_family": "0xProto Nerd Font Mono",
+    "line_height": "comfortable",
+  },
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "edit_predictions": {
+    "mode": "eager",
+    "provider": "zed",
+    "allow_data_collection": "no",
+  },
+  "helix_mode": true,
+  "ui_font_family": "JetBrains Mono",
+  "redact_private_values": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "buffer_font_family": "Fira Code",
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "base_keymap": "VSCode",
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "ui_font_size": 15.0,
+  "buffer_font_size": 13.0,
+  "theme": {
+    "mode": "system",
+    "light": "Alabaster",
+    "dark": "macOS Classic Dark",
+  },
+}

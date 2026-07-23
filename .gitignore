@@ -4,4 +4,10 @@ raycast
 gcloud
 .android
 swiftpm
-op
+/zed/prompts/prompts-library-db.*.mdb/
+/zed/settings_backup.json
+/fish/*
+!/fish/config.fish
+!/fish/functions/
+!/fish/functions/**
+.DS_Store
